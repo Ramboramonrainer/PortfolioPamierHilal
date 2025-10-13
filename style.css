@@ -4,7 +4,7 @@ body {
 p{
     font-family: monospace;
 }
-h4 {
+.headline {
     font-family: monospace;
     justify-content: center;
     text-align: center;
