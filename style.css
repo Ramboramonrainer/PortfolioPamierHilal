@@ -1,12 +1,26 @@
 body {
-    background-color: bisque;
+    background-color: offwhite;
 }
 p{
     font-family: monospace;
 }
-article{
+h4 {
+    font-family: monospace;
+    justify-content: center;
+    text-align: center;
+}
+article {
     align-items: center;
     justify-content: center;
-    margin: 2%;
-    padding: 1%;
+    margin: 2rem;
+    padding: 2rem 15rem 2rem 15rem;
+    width: 60rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+.video {
+    width: 100%;
 }
