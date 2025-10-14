@@ -1,26 +1,123 @@
 body {
-    background-color: offwhite;
+    background-color: white;
+    height:98%;
 }
+
+
+/* Three column layout */
+*{
+    box-sizing: border-box;
+}
+.row{
+    height:100vh;
+    overflow: visible;
+    
+
+}
+.right-column {
+    float: left;
+    width: 25%;
+    height: 100%;
+    padding: 1%;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Für Firefox */
+    -ms-overflow-style: none; /* Für Internet Explorer und Edge */
+    border-left: 1px solid lightgray; /* Trennlinie links */
+}
+.left-column {
+    float: left;
+    width: 25%;
+    height: 100%;
+    padding: 1%;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Für Firefox */
+    -ms-overflow-style: none; /* Für Internet Explorer und Edge */
+    border-right: 1px solid lightgray; /* Trennlinie rechts */
+}
+.middle-column {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 1%;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Für Firefox */
+    -ms-overflow-style: none; /* Für Internet Explorer und Edge */
+}
+/*sticky header */
+/*
+.headline{
+    z-index: 2;
+    position: sticky;
+    padding: 0;
+    margin: 0;
+}
+*/
+
+/* Responsive layout - Mobile devices, stacks columns on top of each other */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+/* Clear floats after the columns */
+  .row:after {
+    content:"";
+    display: table;
+    clear: both;
+
+}
+
 p{
     font-family: monospace;
+    font-size: 0.7rem;
 }
-.headline {
+a {
     font-family: monospace;
-    justify-content: center;
-    text-align: center;
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: black;
 }
+h3 {
+    font-family: monospace;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding-bottom: 15rem;
+    border-bottom: 1px solid lightgray; /* Trennstrich unter Überschrift */
+}
+h4 {
+    font-family: monospace;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+
 article {
     align-items: center;
     justify-content: center;
-    margin: 2rem;
-    padding: 2rem 15rem 2rem 15rem;
-    width: 60rem;
+    width: 100%;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid lightgray; /* Trennstrich unter Artikel */
+    margin-bottom: 1rem;
 }
-
 img {
     width: 100%;
     height: auto;
 }
-.video {
-    width: 100%;
+
+/* CV adjustments */
+.education, .work, .skills, .exhibitions, .awards, .press, .project{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid lightgray; /* Trennstrich unter jeder Kategorie */
+    margin-bottom: 1rem;
 }
+.category, .description{
+    width: 40%;
+    height:100%;
+
+}
+.information, .title { 
+    width: 60%;
+    height: 100%;
+}
+
