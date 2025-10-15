@@ -53,22 +53,7 @@ body {
 }
 */
 
-/* Responsive layout - Mobile devices, stacks columns on top of each other */
-@media screen and (max-width: 600px) {
-    .row {
-        display: block; /* Block-Layout für gestapelte Spalten */
-        height: auto; /* Höhe automatisch anpassen */
-        /* overflow-y: scroll;  Gemeinsame Scroll-Leiste */
-    }
-    .middle-column, .left-column, .right-column {
-      width: 100%; /* Spalten nehmen die gesamte Breite ein */
-      /* overflow-y: visible;  Scrollen innerhalb der Spalten deaktiveren */
-      height: auto; /* Höhe an den Inhalt anpassen */
-    }
-    .headline{
-        display: none;
-    }
-  }
+
 /* Clear floats after the columns */
   .row:after {
     content:"";
@@ -131,3 +116,28 @@ img {
     height: 100%;
 }
 
+/* Responsive layout - Mobile devices, stacks columns on top of each other */
+@media screen and (max-width: 600px) {
+    .row {
+        display: block; /* Block-Layout für gestapelte Spalten */
+        height: auto; /* Höhe automatisch anpassen */
+        /* overflow-y: scroll;  Gemeinsame Scroll-Leiste */
+    }
+    .middle-column, .left-column, .right-column {
+      width: 100%; /* Spalten nehmen die gesamte Breite ein */
+      /* overflow-y: visible;  Scrollen innerhalb der Spalten deaktiveren */
+      height: auto; /* Höhe an den Inhalt anpassen */
+    }
+    .headline{
+        display: none;
+    }
+    .description {
+        width: 60%;
+        height: 100%;
+    }
+    .title{
+        width: 40%;
+        height: 100%;
+        padding-right: 1%;
+    }
+  }
