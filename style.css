@@ -61,27 +61,28 @@ body {
     clear: both;
 
 }
-
+/* Typo Rules */
 p{
     font-family: monospace;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
+    line-height: 1.25;
 }
 a {
     font-family: monospace;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     text-decoration: none;
     color: black;
 }
 h3 {
     font-family: monospace;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: 600;
     padding-bottom: 15rem;
     border-bottom: 1px solid lightgray; /* Trennstrich unter Überschrift */
 }
 h4 {
     font-family: monospace;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: 600;
 }
 
@@ -91,11 +92,12 @@ article {
     justify-content: center;
     width: 100%;
     padding-bottom: 1rem;
-    border-bottom: 1px solid lightgray; /* Trennstrich unter Artikel */
-    margin-bottom: 1rem;
+    /* border-bottom: 1px solid lightgray;  Trennstrich unter Artikel */
+    /* margin-bottom: 1rem; */
+    /*background-color: red; */ /* Debug line*/
 }
 img {
-    width: 100%;
+    width: 100%; /* Wallahi, damit es richtig aussieht */
     height: auto;
 }
 
@@ -116,6 +118,7 @@ img {
     height: 100%;
 }
 
+
 /* Responsive layout - Mobile devices, stacks columns on top of each other */
 @media screen and (max-width: 600px) {
     .row {
@@ -129,15 +132,15 @@ img {
       height: auto; /* Höhe an den Inhalt anpassen */
     }
     .headline{
-        display: none;
+        display: none; /*Lässt die Headline in der mobilen Ansicht verschwinden */
     }
     .description {
-        width: 60%;
+        width: 60%; /* Passt die Breite des Schriftblocks der middle column an */
         height: 100%;
     }
     .title{
-        width: 40%;
+        width: 40%; /* passt die Breite des der Title der middle column an */
         height: 100%;
-        padding-right: 1%;
+        padding-right: 1%; /* angepasster Abstand zwischen den Blöcken*/
     }
   }
